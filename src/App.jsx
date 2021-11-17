@@ -3,20 +3,25 @@ import {
   BrowserRouter as Router,
   Route,
   // Redirect,
-  Switch,
+  Routes,
 } from 'react-router-dom';
 
 import './App.css';
 
 // Pages
 import Home from './pages/Home';
-import add from './pages/add';
+import Add from './pages/add';
 
 function App() {
-  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/add" component={add} />
-  </Switch>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/add" element={<Add />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

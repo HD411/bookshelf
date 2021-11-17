@@ -1,4 +1,5 @@
-export default function Nav() {
+import React from 'react';
+function Nav() {
   return (
     <nav class="Links">
       <a href="#Iconic">Iconic</a>
@@ -17,3 +18,4 @@ export default function Nav() {
     </nav>
   );
 }
+export default Nav;
