@@ -10,10 +10,12 @@ import './App.css';
 
 // Pages
 import Home from './pages/Home';
+import add from './pages/add';
 
 function App() {
   <Switch>
     <Route exact path="/" component={Home} />
+    <Route exact path="/add" component={add} />
   </Switch>;
 }
 

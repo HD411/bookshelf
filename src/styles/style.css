@@ -39,11 +39,6 @@ nav a:hover {
   background-color: rgb(189, 189, 189);
 }
 
-.Classics {
-  font-family: 'Ballet', cursive;
-  font-size: 1.7em;
-}
-
 footer {
   display: flex;
   justify-content: center;
